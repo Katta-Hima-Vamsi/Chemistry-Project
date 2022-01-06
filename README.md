@@ -1,2 +1,1 @@
-# Chemistry-Project
-Chemistry art integration task for winter vacation 
+Chemistry winter vacation art integration acvity.
