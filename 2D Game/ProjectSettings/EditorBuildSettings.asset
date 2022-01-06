@@ -9,6 +9,159 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 35dd15eb82e04c1429276d46596a5ddc
   - enabled: 1
-    path: Assets/Scenes/Platformer.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Question1/Question1.unity
+    guid: 7b4a9ba87d0ebd94b8c9eba39611477f
+  - enabled: 1
+    path: Assets/Scenes/Question1/Platformer.unity
+    guid: d353b3de459b60a4bbd071d208bdb2e8
+  - enabled: 1
+    path: Assets/Scenes/Question1/LevelOver.unity
+    guid: 9f9353d6ed89cf84fa36d05f5b7f275e
+  - enabled: 1
+    path: Assets/Scenes/Question2/Question2.unity
+    guid: cbb0bcad1e358db46b67188e98def6d2
+  - enabled: 1
+    path: Assets/Scenes/Question2/Platformer.unity
+    guid: 0f6c7a6a26f379f4d8fbb0c70fffd030
+  - enabled: 1
+    path: Assets/Scenes/Question2/LevelOver.unity
+    guid: f10dc298811cf6441a5d1b916ded0d90
+  - enabled: 1
+    path: Assets/Scenes/Question3/Question3.unity
+    guid: 09c7d71c5e30fda4e8376814f854b478
+  - enabled: 1
+    path: Assets/Scenes/Question3/Platformer.unity
+    guid: fc21cac16976ee146aee34ce48c853e8
+  - enabled: 1
+    path: Assets/Scenes/Question3/LevelOver.unity
+    guid: bae8f9b6c0cf1f743856feeb4001f6dd
+  - enabled: 1
+    path: Assets/Scenes/Question4/Question4.unity
+    guid: 2379a716393d75b4394ac4163ca29b33
+  - enabled: 1
+    path: Assets/Scenes/Question4/Platformer.unity
+    guid: 3541068f0ae12fd41ba34db785e1c853
+  - enabled: 1
+    path: Assets/Scenes/Question4/LevelOver.unity
+    guid: d04d598647f21f645b050491dcb50e42
+  - enabled: 1
+    path: Assets/Scenes/Question5/Question5.unity
+    guid: e30a9dfacdbbf6046ae6b9a15ac74b1f
+  - enabled: 1
+    path: Assets/Scenes/Question5/Platformer.unity
+    guid: 5f798f8a60b8e0f4596f9592fad99564
+  - enabled: 1
+    path: Assets/Scenes/Question5/LevelOver.unity
+    guid: c814392ed4678164cbceba6705a84aca
+  - enabled: 1
+    path: Assets/Scenes/Question6/Question6.unity
+    guid: 8a3ee4889b519124ab7a00ac3b42545f
+  - enabled: 1
+    path: Assets/Scenes/Question6/Platformer.unity
+    guid: 806fb3a165741084a9a2a597246da951
+  - enabled: 1
+    path: Assets/Scenes/Question6/LevelOver.unity
+    guid: 685e2530346d7b145a40bf4c6b9a4b77
+  - enabled: 1
+    path: Assets/Scenes/Question7/Question7.unity
+    guid: a313046e0554a4b419efa80d611d40ae
+  - enabled: 1
+    path: Assets/Scenes/Question7/Platformer.unity
+    guid: d5afb6b5407f29d4cba9e82cd89c2307
+  - enabled: 1
+    path: Assets/Scenes/Question7/LevelOver.unity
+    guid: c729443c04eaace46a37b468d9ea2216
+  - enabled: 1
+    path: Assets/Scenes/Question8/Question8.unity
+    guid: 09fed81b82f5c004998dc99066002a88
+  - enabled: 1
+    path: Assets/Scenes/Question8/Platformer.unity
+    guid: 71af5c7c17e29184893695f20c705946
+  - enabled: 1
+    path: Assets/Scenes/Question8/LevelOver.unity
+    guid: 888f683366e15f04a83ec986e6681b84
+  - enabled: 1
+    path: Assets/Scenes/Question9/Question9.unity
+    guid: 58538666b3fb97c4187e798e734e2d5a
+  - enabled: 1
+    path: Assets/Scenes/Question9/Platformer.unity
+    guid: 37a800dd34091cf4ca78f861ba74a7d0
+  - enabled: 1
+    path: Assets/Scenes/Question9/LevelOver.unity
+    guid: 5756ca5e4b84f054182c5db40b65c902
+  - enabled: 1
+    path: Assets/Scenes/Question10/Question10.unity
+    guid: 30134af37cc79a74fb5458a4ec490949
+  - enabled: 1
+    path: Assets/Scenes/Question10/Platformer.unity
+    guid: 268c38fa9d63f9e46a7c357dfca45e82
+  - enabled: 1
+    path: Assets/Scenes/Question10/LevelOver.unity
+    guid: 6ae9a38d84a824b4cadb9423fbfbdeb8
+  - enabled: 1
+    path: Assets/Scenes/Question11/Question11.unity
+    guid: a1b87f192eb2db842b1b898a11fa6401
+  - enabled: 1
+    path: Assets/Scenes/Question11/Platformer.unity
+    guid: 99718365effdda6469087c4738383d97
+  - enabled: 1
+    path: Assets/Scenes/Question11/LevelOver.unity
+    guid: c26c9cecb2dbe5b46b95be2fb122e440
+  - enabled: 1
+    path: Assets/Scenes/Question12/Question12.unity
+    guid: e5d0daaa189557f4892430f3d0f04d58
+  - enabled: 1
+    path: Assets/Scenes/Question12/Platformer.unity
+    guid: 6ef1260eef848394f836486896f33ba2
+  - enabled: 1
+    path: Assets/Scenes/Question12/LevelOver.unity
+    guid: 39098b8e0f63434488ce2fa880f643c0
+  - enabled: 1
+    path: Assets/Scenes/Question13/Question13.unity
+    guid: c8ebea073779cfd4c832ef817c612c74
+  - enabled: 1
+    path: Assets/Scenes/Question13/Platformer.unity
+    guid: 3b0b713d4238b7e4d8bde5b61334a1aa
+  - enabled: 1
+    path: Assets/Scenes/Question13/LevelOver.unity
+    guid: 4552dd15f6f3add4b9262e7be3f96019
+  - enabled: 1
+    path: Assets/Scenes/Question14/Question14.unity
+    guid: a9c109b537cdc3a4988dcca2e6f0bd6b
+  - enabled: 1
+    path: Assets/Scenes/Question14/Platformer.unity
+    guid: 82e7f47be408a454a9bac6760acc1db9
+  - enabled: 1
+    path: Assets/Scenes/Question14/LevelOver.unity
+    guid: c9ff29040918eaa49badbf880c091da2
+  - enabled: 1
+    path: Assets/Scenes/Question15/Question15.unity
+    guid: ff8cfa0f46c4fa5448ee3dba4b8a44e5
+  - enabled: 1
+    path: Assets/Scenes/Question15/Platformer.unity
+    guid: c3abe31b2d53d354c93ad360f23498e8
+  - enabled: 1
+    path: Assets/Scenes/Question15/LevelOver.unity
+    guid: 86610d18ac44cba4c900fdb38f611f1f
+  - enabled: 1
+    path: Assets/Scenes/Question16/Question16.unity
+    guid: 592c22130736c2449884cc42edb97aa6
+  - enabled: 1
+    path: Assets/Scenes/Question16/Platformer.unity
+    guid: 3fed3fa940e1fc346936f054da14f7d7
+  - enabled: 1
+    path: Assets/Scenes/Question16/LevelOver.unity
+    guid: 467a8d294340bd040ba42aa7e6ed5f3b
+  - enabled: 1
+    path: Assets/Scenes/Question17/Question17.unity
+    guid: e581c1ef5f8be1541bfce352c1f090c9
+  - enabled: 1
+    path: Assets/Scenes/Question17/Platformer.unity
+    guid: 79da23b9cbbbd344e81a844b89bfa5a2
+  - enabled: 1
+    path: Assets/Scenes/Question17/LevelOver.unity
+    guid: fde545373d665f9499c28c0bcbb88c04
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 45b62a31ac8a74246a463dbb707045a3
   m_configObjects: {}

@@ -81,17 +81,27 @@ MonoBehaviour:
   waves:
   - name: Wave1
     enemy: {fileID: 295865945595687994, guid: fb702cd6bdd4e1c4b9b75c16b237f65e, type: 3}
-    count: 2
+    count: 5
     rate: 1
   - name: Wave2
     enemy: {fileID: 295865945595687994, guid: fb702cd6bdd4e1c4b9b75c16b237f65e, type: 3}
-    count: 3
+    count: 7
     rate: 1.5
   - name: Wave3
     enemy: {fileID: 295865945595687994, guid: fb702cd6bdd4e1c4b9b75c16b237f65e, type: 3}
-    count: 5
+    count: 9
+    rate: 2
+  - name: Wave4
+    enemy: {fileID: 295865945595687994, guid: fb702cd6bdd4e1c4b9b75c16b237f65e, type: 3}
+    count: 6
+    rate: 2
+  - name: Wave5
+    enemy: {fileID: 295865945595687994, guid: fb702cd6bdd4e1c4b9b75c16b237f65e, type: 3}
+    count: 4
     rate: 2
   spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

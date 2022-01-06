@@ -10,13 +10,22 @@ public class UpgradeMenu : MonoBehaviour {
 	private Text speedText;
 
 	[SerializeField]
-	private float healthMultiplier = 1.3f;
+	private Text livesText;
 
 	[SerializeField]
-	private float movementSpeedMultiplier = 1.3f;
+	private int healthIncreaseValue = 25;
 
 	[SerializeField]
-	private int upgradeCost = 50;
+	private int speedIncreaseValue = 5;
+
+	[SerializeField]
+	private int healthUpgradeCost = 50;
+	
+	[SerializeField]
+	private int speedUpgradeCost = 50;
+	
+	[SerializeField]
+	private int livesIncreaseCost = 10;
 
 	private PlayerStats stats;
 
@@ -28,21 +37,23 @@ public class UpgradeMenu : MonoBehaviour {
 
 	void UpdateValues ()
 	{
-		healthText.text = "HEALTH: " + stats.maxHealth.ToString();
-		speedText.text = "SPEED: " + stats.movementSpeed.ToString();
+		healthText.text = "HEALTH:" + stats.maxHealth.ToString();
+		speedText.text = "SPEED:" + stats.movementSpeed.ToString();
+		livesText.text = "Lives:" + GameMaster._remainingLives.ToString();
+
     }
 
 	public void UpgradeHealth ()
 	{
-		if (GameMaster.Money < upgradeCost)
+		if (GameMaster.Money < healthUpgradeCost)
 		{
 			AudioManager.instance.PlaySound("NoMoney");
 			return;
 		}
 
-		stats.maxHealth = (int)(stats.maxHealth * healthMultiplier);
+		stats.maxHealth = (int)(stats.maxHealth + healthIncreaseValue);
 
-		GameMaster.Money -= upgradeCost;
+		GameMaster.Money -= healthUpgradeCost;
 		AudioManager.instance.PlaySound("Money");
 
 		UpdateValues();
@@ -50,15 +61,32 @@ public class UpgradeMenu : MonoBehaviour {
 
 	public void UpgradeSpeed()
 	{
-		if (GameMaster.Money < upgradeCost)
+		if (GameMaster.Money < speedUpgradeCost)
 		{
 			AudioManager.instance.PlaySound("NoMoney");
 			return;
 		}
 
-		stats.movementSpeed = Mathf.Round (stats.movementSpeed * movementSpeedMultiplier);
+		stats.movementSpeed = Mathf.Round (stats.movementSpeed + speedIncreaseValue);
 
-		GameMaster.Money -= upgradeCost;
+		GameMaster.Money -= speedUpgradeCost;
+		AudioManager.instance.PlaySound("Money");
+
+		UpdateValues();
+	}
+
+	public void IncreaseLives()
+	{
+		if (GameMaster.Money < livesIncreaseCost)
+		{
+			AudioManager.instance.PlaySound("NoMoney");
+			return;
+		}
+
+		int tempLivesHolder = GameMaster._remainingLives;
+		GameMaster._remainingLives = tempLivesHolder + 1;
+
+		GameMaster.Money -= livesIncreaseCost;
 		AudioManager.instance.PlaySound("Money");
 
 		UpdateValues();

@@ -7,10 +7,10 @@ public class GameMaster : MonoBehaviour
 
 	[SerializeField]
 	private int maxLives = 3;
-	private static int _remainingLives;
+	public static int _remainingLives;
 	public static int RemainingLives
 	{
-		get { return _remainingLives; }
+		get { return _remainingLives;}
 	}
 
 	[SerializeField]

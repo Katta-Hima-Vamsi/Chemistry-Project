@@ -32,7 +32,7 @@ public class GameOverUI : MonoBehaviour {
 	{
 		audioManager.PlaySound(buttonPressSound);
 
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
 	}
 
 	public void OnMouseOver ()

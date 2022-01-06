@@ -285,6 +285,9 @@ GameObject:
   - component: {fileID: 295865945595687998}
   - component: {fileID: 1984683663}
   - component: {fileID: 5850228697958226999}
+  - component: {fileID: 4948545576166290768}
+  - component: {fileID: 6325283008651548995}
+  - component: {fileID: 2313794583506781583}
   m_Layer: 8
   m_Name: AlienSpaceship
   m_TagString: Enemy
@@ -421,7 +424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   updateRate: 2
-  speed: 600
+  speed: 800
   fMode: 0
   pathIsEnded: 0
   nextWaypointDistance: 3
@@ -443,6 +446,8 @@ MonoBehaviour:
   deathParticles: {fileID: 3435426023622893044, guid: 6c11eae02e7ec864cb718c1e753c5e0c, type: 3}
   shakeAmt: 0.1
   shakeLength: 0.1
+  deathSoundName: Explosion
+  moneyDrop: 10
   statusIndicator: {fileID: 628371145}
 --- !u!60 &5850228697958226999
 PolygonCollider2D:
@@ -518,3 +523,51 @@ PolygonCollider2D:
       - {x: 0.42368317, y: 0.38612652}
       - {x: 0.4229946, y: 0.46062183}
       - {x: 0.34302688, y: 0.46146947}
+--- !u!58 &4948545576166290768
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295865945595687999}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.016462684}
+  serializedVersion: 2
+  m_Radius: 0.5882865
+--- !u!58 &6325283008651548995
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295865945595687999}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.52680725, y: -0.21954131}
+  serializedVersion: 2
+  m_Radius: 0.3261333
+--- !u!58 &2313794583506781583
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295865945595687999}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.55544007, y: -0.21954131}
+  serializedVersion: 2
+  m_Radius: 0.32829344
