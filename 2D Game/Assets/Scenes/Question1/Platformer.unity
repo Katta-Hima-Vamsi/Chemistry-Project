@@ -817,12 +817,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthText: {fileID: 1526313420}
   speedText: {fileID: 2063128919}
-  livesText: {fileID: 1250707720}
-  healthIncreaseValue: 25
-  speedIncreaseValue: 5
-  healthUpgradeCost: 50
-  speedUpgradeCost: 50
-  livesIncreaseCost: 100
+  healthUpgradeCost: 30
+  speedUpgradeCost: 10
 --- !u!1 &388139408
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,7 +2068,6 @@ GameObject:
   - component: {fileID: 861946888}
   - component: {fileID: 861946891}
   - component: {fileID: 861946890}
-  - component: {fileID: 861946889}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -2095,18 +2090,6 @@ Transform:
   m_Father: {fileID: 1972787478}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &861946889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 861946887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9c849e89c461454996d2db8459c9bf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!81 &861946890
 AudioListener:
   m_ObjectHideFlags: 0

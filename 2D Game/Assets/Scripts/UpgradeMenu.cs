@@ -10,22 +10,9 @@ public class UpgradeMenu : MonoBehaviour {
 	private Text speedText;
 
 	[SerializeField]
-	private Text livesText;
-
+	private int healthUpgradeCost = 30;
 	[SerializeField]
-	private int healthIncreaseValue = 25;
-
-	[SerializeField]
-	private int speedIncreaseValue = 5;
-
-	[SerializeField]
-	private int healthUpgradeCost = 50;
-	
-	[SerializeField]
-	private int speedUpgradeCost = 50;
-	
-	[SerializeField]
-	private int livesIncreaseCost = 10;
+	private int speedUpgradeCost = 10;
 
 	private PlayerStats stats;
 
@@ -37,10 +24,8 @@ public class UpgradeMenu : MonoBehaviour {
 
 	void UpdateValues ()
 	{
-		healthText.text = "HEALTH:" + stats.maxHealth.ToString();
-		speedText.text = "SPEED:" + stats.movementSpeed.ToString();
-		livesText.text = "Lives:" + GameMaster._remainingLives.ToString();
-
+		healthText.text = "HEALTH: " + stats.maxHealth.ToString();
+		speedText.text = "SPEED: " + stats.movementSpeed.ToString();
     }
 
 	public void UpgradeHealth ()
@@ -51,7 +36,7 @@ public class UpgradeMenu : MonoBehaviour {
 			return;
 		}
 
-		stats.maxHealth = (int)(stats.maxHealth + healthIncreaseValue);
+		stats.maxHealth = (int)(stats.maxHealth + 25);
 
 		GameMaster.Money -= healthUpgradeCost;
 		AudioManager.instance.PlaySound("Money");
@@ -67,26 +52,9 @@ public class UpgradeMenu : MonoBehaviour {
 			return;
 		}
 
-		stats.movementSpeed = Mathf.Round (stats.movementSpeed + speedIncreaseValue);
+		stats.movementSpeed = Mathf.Round (stats.movementSpeed + 5);
 
 		GameMaster.Money -= speedUpgradeCost;
-		AudioManager.instance.PlaySound("Money");
-
-		UpdateValues();
-	}
-
-	public void IncreaseLives()
-	{
-		if (GameMaster.Money < livesIncreaseCost)
-		{
-			AudioManager.instance.PlaySound("NoMoney");
-			return;
-		}
-
-		int tempLivesHolder = GameMaster._remainingLives;
-		GameMaster._remainingLives = tempLivesHolder + 1;
-
-		GameMaster.Money -= livesIncreaseCost;
 		AudioManager.instance.PlaySound("Money");
 
 		UpdateValues();
