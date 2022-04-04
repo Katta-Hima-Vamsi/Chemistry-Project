@@ -1,1 +1,1 @@
-Chemistry winter vacation art integration acvity.
+Chemistry winter vacation art integration activity.
